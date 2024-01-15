@@ -1,0 +1,20 @@
+Most APIs impose a rate limit (a limit to how many times an API may be called in a given amount of time)
+
+To see this for github, go to: 
+https://api.github.com/rate_limit
+
+should see a response like this: 
+
+
+{
+    "resources": {
+    --snip--
+    1 "search": {
+    2 "limit": 10,
+    3 "remaining": 9,
+    4 "reset": 1652338832,
+    "used": 1,
+    "resource": "search"
+       },
+    }
+}
